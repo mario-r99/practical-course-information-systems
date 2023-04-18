@@ -2,6 +2,7 @@
 
 ## CV-Priv App
 A web application to dynamically create Privacy Policies depending on data the user wants to protect
+![App Demo Animation](orga/Demo-Animation.webp)
 
 ### Installation
 If you just want to run the app, follow the the Deployment instructions.
