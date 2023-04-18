@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AlteredData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConsumptionRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataProvider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DynamicVehicleProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PET"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PETAppliableData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recipient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remote"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensitive_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaticVehicleProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#privacy_policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#privacy_property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SLA/Terms"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PETproduces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#activateIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#alters"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliableTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToVC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consumes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#determines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConsumptionRequest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrivacyPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSLA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfVC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#protects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesConsentTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shouldAchieve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesPET"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AlteredData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DynamicVehicleProperty"/>
+        <Class IRI="#VehicleProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local"/>
+        <Class IRI="#Recipient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PETAppliableData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remote"/>
+        <Class IRI="#Recipient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaticVehicleProperty"/>
+        <Class IRI="#VehicleProperty"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ConsumptionRequest"/>
+        <Class IRI="#DataProvider"/>
+        <Class IRI="#PET"/>
+        <Class IRI="#Recipient"/>
+        <Class IRI="#Sensitive_information"/>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#VehicleComponent"/>
+        <Class IRI="#VehicleData"/>
+        <Class IRI="#VehicleProperty"/>
+        <Class IRI="#privacy_policy"/>
+        <Class IRI="#privacy_property"/>
+        <Class IRI="#situation"/>
+        <Class IRI="#SLA/Terms"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConsumptionRequest"/>
+        <Class IRI="#DataProvider"/>
+        <Class IRI="#PET"/>
+        <Class IRI="#Recipient"/>
+        <Class IRI="#Sensitive_information"/>
+        <Class IRI="#VehicleData"/>
+        <Class IRI="#privacy_policy"/>
+        <Class IRI="#privacy_property"/>
+        <Class IRI="#situation"/>
+        <Class IRI="#SLA/Terms"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConsumptionRequest"/>
+        <Class IRI="#DataProvider"/>
+        <Class IRI="#PET"/>
+        <Class IRI="#Sensitive_information"/>
+        <Class IRI="#VehicleData"/>
+        <Class IRI="#privacy_policy"/>
+        <Class IRI="#privacy_property"/>
+        <Class IRI="#situation"/>
+        <Class IRI="#SLA/Terms"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DynamicVehicleProperty"/>
+        <Class IRI="#StaticVehicleProperty"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Local"/>
+        <Class IRI="#Remote"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PETproduces"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#activateIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#alters"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliableTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToVC"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consumes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#determines"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasConsumptionRequest"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrivacyPolicy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSLA"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#partOfV"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#partOfVC"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#produces"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#protects"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#provides"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#providesConsentTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#relatesTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#shouldAchieve"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#uses"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesPET"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PETproduces"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#activateIn"/>
+        <Class IRI="#privacy_policy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#alters"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliableTo"/>
+        <Class IRI="#privacy_policy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesTo"/>
+        <Class IRI="#privacy_policy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToVC"/>
+        <Class IRI="#VehicleProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consumes"/>
+        <Class IRI="#ConsumptionRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#determines"/>
+        <Class IRI="#situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConsumptionRequest"/>
+        <Class IRI="#Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrivacyPolicy"/>
+        <Class IRI="#DataProvider"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSLA"/>
+        <Class IRI="#Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfV"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#VehicleProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#protects"/>
+        <Class IRI="#privacy_policy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#provides"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#providesConsentTo"/>
+        <Class IRI="#DataProvider"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatesTo"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatesTo"/>
+        <Class IRI="#situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shouldAchieve"/>
+        <Class IRI="#privacy_policy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#DataProvider"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesPET"/>
+        <Class IRI="#privacy_policy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PETproduces"/>
+        <Class IRI="#AlteredData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#activateIn"/>
+        <Class IRI="#situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#alters"/>
+        <Class IRI="#PETAppliableData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliableTo"/>
+        <Class IRI="#Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesTo"/>
+        <Class IRI="#ConsumptionRequest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToVC"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consumes"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Sensitive_information"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#determines"/>
+        <Class IRI="#Sensitive_information"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConsumptionRequest"/>
+        <Class IRI="#ConsumptionRequest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrivacyPolicy"/>
+        <Class IRI="#privacy_policy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSLA"/>
+        <Class IRI="#SLA/Terms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfV"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#protects"/>
+        <Class IRI="#Sensitive_information"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#protects"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#provides"/>
+        <Class IRI="#privacy_property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#providesConsentTo"/>
+        <Class IRI="#SLA/Terms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatesTo"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#shouldAchieve"/>
+        <Class IRI="#privacy_property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesPET"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

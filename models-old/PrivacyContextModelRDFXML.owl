@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#"
+     xml:base="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PETproduces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PETproduces">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#AlteredData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#activateIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#activateIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#alters -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#alters">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PETAppliableData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#appliableTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#appliableTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#appliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#appliesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#ConsumptionRequest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#belongsToVC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#belongsToVC">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#consumes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#consumes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#ConsumptionRequest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Sensitive_information"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#determines -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#determines">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Sensitive_information"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#hasConsumptionRequest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#hasConsumptionRequest">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#ConsumptionRequest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#hasPrivacyPolicy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#hasPrivacyPolicy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DataProvider"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#hasSLA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#hasSLA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#SLA/Terms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#partOfV -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#partOfV">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#partOfVC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#partOfVC">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#produces">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#protects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#protects">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Sensitive_information"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#provides">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#providesConsentTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#providesConsentTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DataProvider"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#SLA/Terms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#relatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#relatesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#shouldAchieve -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#shouldAchieve">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#uses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DataProvider"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#usesPET -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#usesPET">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleComponent"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#AlteredData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#AlteredData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#ConsumptionRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#ConsumptionRequest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DataProvider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DataProvider"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DynamicVehicleProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DynamicVehicleProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleProperty"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#StaticVehicleProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Local -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Local">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Remote"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PETAppliableData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PETAppliableData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Remote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Remote">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Sensitive_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Sensitive_information"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#StaticVehicleProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#StaticVehicleProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Vehicle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#situation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#SLA/Terms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#SLA/Terms"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#ConsumptionRequest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DataProvider"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Sensitive_information"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Vehicle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleComponent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleProperty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_property"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#situation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#SLA/Terms"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#ConsumptionRequest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DataProvider"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Recipient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Sensitive_information"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_property"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#situation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#SLA/Terms"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#ConsumptionRequest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#DataProvider"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#PET"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#Sensitive_information"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#VehicleData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_policy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#privacy_property"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#situation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/10/PrivacyContextModel#SLA/Terms"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

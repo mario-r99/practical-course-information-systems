@@ -1,0 +1,1751 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel"
+     xml:base="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:PrivacyContextModel="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#achieves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#achieves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#activatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#activatesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#among -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#among">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#appliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#appliesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#belongsToVehicleComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#belongsToVehicleComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#consentsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#consentsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#createsPP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#createsPP">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#createsSit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#createsSit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#evaluatesOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#evaluatesOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasInput">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasSLA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasSLA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#partOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#partOfVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#partOfVehicle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#produces">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#protects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#protects">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#provides">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#requestsDataFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#requestsDataFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#targetsService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#targetsService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#uses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#usesPET -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#usesPET">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#capacity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#latency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#latency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#locDataQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#locDataQuality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxDegreeDiff -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxDegreeDiff"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxSpeedDiff -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxSpeedDiff"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxTimeDiff -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxTimeDiff"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#threshold -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#threshold"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LaneMonitoringData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LaneMonitoringData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleFaceMonitoringData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleFaceMonitoringData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleHeadingData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleHeadingData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleIncomingAudioData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleIncomingAudioData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleLocationData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleLocationData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleOutgoingAudioData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleOutgoingAudioData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSpeedData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSpeedData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSteeringData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSteeringData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleTimeData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleTimeData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Alex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Alex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+        <PrivacyContextModel:consentsTo rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection_SLA"/>
+        <PrivacyContextModel:consentsTo rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviSLA"/>
+        <PrivacyContextModel:createsPP rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityFreeway"/>
+        <PrivacyContextModel:createsPP rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityNearHome"/>
+        <PrivacyContextModel:createsPP rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityFreeway"/>
+        <PrivacyContextModel:createsSit rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Freeway"/>
+        <PrivacyContextModel:createsSit rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NearHome"/>
+        <PrivacyContextModel:uses rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar"/>
+        <rdfs:label>Alex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle"/>
+        <rdfs:label>Alex Car</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyProperty"/>
+        <rdfs:label>Anonymity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service"/>
+        <PrivacyContextModel:hasSLA rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection_SLA"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Camera"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ChassisSteeringWheel"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Lane_Detection"/>
+        <rdfs:label>Attentiveness Detection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection_SLA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection_SLA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA"/>
+        <PrivacyContextModel:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</PrivacyContextModel:capacity>
+        <PrivacyContextModel:threshold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</PrivacyContextModel:threshold>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Benz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Benz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service"/>
+        <PrivacyContextModel:hasSLA rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzCalls"/>
+        <PrivacyContextModel:hasSLA rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzParkassistant"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ChassisSteeringWheel"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Microphone"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PowertrainTransmission"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Speaker"/>
+        <rdfs:label>Benz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzCalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzCalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA"/>
+        <rdfs:label>Benz Calls</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzParkassistant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzParkassistant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA"/>
+        <rdfs:label>Benz Parkassistent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Calls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Calls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+        <PrivacyContextModel:evaluatesOn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio"/>
+        <PrivacyContextModel:evaluatesOn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:evaluatesOn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio"/>
+        <rdfs:label>Calls</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#CallsDD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#CallsDD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <rdfs:label>Calls Data Dependency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Camera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Camera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ChassisSteeringWheel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ChassisSteeringWheel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TimCar"/>
+        <rdfs:label>Chassis Steering Wheel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyProperty"/>
+        <rdfs:label>Confidentiality</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Freeway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Freeway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+        <PrivacyContextModel:evaluatesOn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#FreewayDD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#FreewayDD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#IncomingAudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#IncomingAudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Microphone"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio"/>
+        <rdfs:label>Incoming Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#InfotainmentNavigation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#InfotainmentNavigation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar"/>
+        <rdfs:label>Infotainment Navigation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Interior_Camera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Interior_Camera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Camera"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LaneDepartureDetectionWarning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LaneDepartureDetectionWarning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Lane_Detection"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Lane_Detection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Lane_Detection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LocationDD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LocationDD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <rdfs:label>Location Data Dependency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Microphone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Microphone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SabrinaCar"/>
+        <rdfs:label>Microphone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityCalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityCalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityCalls"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>N Mix Anonymity Calls</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityNearHome_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityNearHome_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityNearHome_1"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>N Mix Anonymity Near Home_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityParking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityParking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityParking"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>N Mix Anonymity Parking</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixConfidentialityCalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixConfidentialityCalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureConfidentialityCalls"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+        <rdfs:label>N Mix Confidentiality Calls</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixConfidentialityParking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixConfidentialityParking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureConfidentialityParking"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+        <rdfs:label>N Mix Confidentiality Parking</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#N_Mix_Anonymity_Calls_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#N_Mix_Anonymity_Calls_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_3"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>N Mix Anonymity NearHome_3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#N_Mix_Anonymity_NearHome_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#N_Mix_Anonymity_NearHome_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_2"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>N Mix Anonymity NearHome_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviApp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviApp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service"/>
+        <PrivacyContextModel:hasSLA rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviSLA"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#InfotainmentNavigation"/>
+        <PrivacyContextModel:requestsDataFrom rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PowertrainTransmission"/>
+        <rdfs:label>Navi App</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviSLA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviSLA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA"/>
+        <PrivacyContextModel:locDataQuality>1.0</PrivacyContextModel:locDataQuality>
+        <PrivacyContextModel:maxDegreeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</PrivacyContextModel:maxDegreeDiff>
+        <PrivacyContextModel:maxSpeedDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</PrivacyContextModel:maxSpeedDiff>
+        <PrivacyContextModel:maxTimeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</PrivacyContextModel:maxTimeDiff>
+        <rdfs:label>Navi SLA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#InfotainmentNavigation"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <rdfs:label>Navi Speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_CurrentClockTime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_CurrentClockTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#InfotainmentNavigation"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <rdfs:label>Navi CurrentClockTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_Heading -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_Heading">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#InfotainmentNavigation"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <rdfs:label>Navi Heading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_Location -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_Location">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#InfotainmentNavigation"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <rdfs:label>Navi Location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NearHome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NearHome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+        <PrivacyContextModel:evaluatesOn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <rdfs:label>Near Home</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#OutgoingAudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#OutgoingAudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Speaker"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio"/>
+        <rdfs:label>Outgoing Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_1"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_2"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_3"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_1"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Heading 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_2"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Heading 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_3"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Heading 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Location -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Location">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Location"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Heading Location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Location_Speed_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Location_Speed_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Heading Location Speed Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Speed_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Speed_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Speed_Time"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Heading Speed Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_1"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Speed 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_2"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Speed 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_3"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Speed 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_Time"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Speed Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_1"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Time 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_2"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Time 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_3"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <rdfs:label>PET Anonymity Time 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_1"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_2"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_3"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_1"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_2"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+        <PrivacyContextModel:hasFeature rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_3"/>
+        <PrivacyContextModel:hasInput rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring"/>
+        <PrivacyContextModel:provides rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityCalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityCalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <PrivacyContextModel:achieves rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <PrivacyContextModel:activatesIn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Calls"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <PrivacyContextModel:targetsService rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Benz"/>
+        <rdfs:label>Privacy Policy (Anonymity, Calls)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityFreeway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityFreeway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <PrivacyContextModel:achieves rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <PrivacyContextModel:activatesIn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Freeway"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring"/>
+        <PrivacyContextModel:targetsService rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityNearHome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityNearHome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <PrivacyContextModel:achieves rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <PrivacyContextModel:activatesIn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NearHome"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:targetsService rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviApp"/>
+        <rdfs:label>Privacy Policy (Anonymity, Near Home)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityParking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityParking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <PrivacyContextModel:achieves rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity"/>
+        <PrivacyContextModel:activatesIn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Parking"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <PrivacyContextModel:targetsService rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Benz"/>
+        <rdfs:label>Privacy Policy (Anonymity, Parking)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityCalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityCalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <PrivacyContextModel:achieves rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+        <PrivacyContextModel:activatesIn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Calls"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio"/>
+        <PrivacyContextModel:targetsService rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Benz"/>
+        <rdfs:label>Privacy Policy (Confidentiality, Calls)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityFreeway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityFreeway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <PrivacyContextModel:achieves rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+        <PrivacyContextModel:activatesIn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Freeway"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <PrivacyContextModel:targetsService rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityParking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityParking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+        <PrivacyContextModel:achieves rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality"/>
+        <PrivacyContextModel:activatesIn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Parking"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <PrivacyContextModel:protects rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <PrivacyContextModel:targetsService rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Benz"/>
+        <rdfs:label>Privacy Policy (Confidentiality, Parking)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Parking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Parking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+        <PrivacyContextModel:evaluatesOn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:evaluatesOn rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <rdfs:label>Parking</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ParkingDD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ParkingDD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <PrivacyContextModel:among rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime"/>
+        <rdfs:label>Parking Data Dependency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PowertrainTransmission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PowertrainTransmission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TimCar"/>
+        <rdfs:label>Powertrain Transmission</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityCalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityCalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <rdfs:label>Priv Feature (Anonymity, Calls)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityNearHome_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityNearHome_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:locDataQuality>1.0</PrivacyContextModel:locDataQuality>
+        <rdfs:label>Priv Feature (Anonymity, Near Home)_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityParking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityParking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <rdfs:label>Priv Feature (Anonymity, Parking)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureConfidentialityCalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureConfidentialityCalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <rdfs:label>Priv Feature (Confidentiality, Calls)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureConfidentialityParking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureConfidentialityParking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <rdfs:label>Priv Feature (Confidentiality, Parking)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:threshold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</PrivacyContextModel:threshold>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:threshold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</PrivacyContextModel:threshold>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:threshold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</PrivacyContextModel:threshold>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxDegreeDiff>1.2</PrivacyContextModel:maxDegreeDiff>
+        <rdfs:label>PrivFeature Anonymity Heading 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxDegreeDiff>8.7</PrivacyContextModel:maxDegreeDiff>
+        <rdfs:label>PrivFeature Anonymity Heading 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxDegreeDiff>14.3</PrivacyContextModel:maxDegreeDiff>
+        <rdfs:label>PrivFeature Anonymity Heading 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Location -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Location">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:latency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</PrivacyContextModel:latency>
+        <PrivacyContextModel:locDataQuality rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</PrivacyContextModel:locDataQuality>
+        <PrivacyContextModel:maxDegreeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.3</PrivacyContextModel:maxDegreeDiff>
+        <rdfs:label>PrivFeature Anonymity Heading Location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Location_Speed_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Location_Speed_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:latency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</PrivacyContextModel:latency>
+        <PrivacyContextModel:locDataQuality rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</PrivacyContextModel:locDataQuality>
+        <PrivacyContextModel:maxDegreeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</PrivacyContextModel:maxDegreeDiff>
+        <PrivacyContextModel:maxSpeedDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</PrivacyContextModel:maxSpeedDiff>
+        <PrivacyContextModel:maxTimeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.1</PrivacyContextModel:maxTimeDiff>
+        <rdfs:label>PrivFeature Anonymity Heading Location Speed Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Speed_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Speed_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxDegreeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</PrivacyContextModel:maxDegreeDiff>
+        <PrivacyContextModel:maxSpeedDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4</PrivacyContextModel:maxSpeedDiff>
+        <PrivacyContextModel:maxTimeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</PrivacyContextModel:maxTimeDiff>
+        <PrivacyContextModel:maxTimeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</PrivacyContextModel:maxTimeDiff>
+        <rdfs:label>PrivFeature Anonymity Heading Speed Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxSpeedDiff>2.1</PrivacyContextModel:maxSpeedDiff>
+        <rdfs:label>PrivFeature Anonymity Speed 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxSpeedDiff>6.0</PrivacyContextModel:maxSpeedDiff>
+        <rdfs:label>PrivFeature Anonymity Speed 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxSpeedDiff>7.25</PrivacyContextModel:maxSpeedDiff>
+        <rdfs:label>PrivFeature Anonymity Speed 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:latency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</PrivacyContextModel:latency>
+        <PrivacyContextModel:maxSpeedDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</PrivacyContextModel:maxSpeedDiff>
+        <PrivacyContextModel:maxTimeDiff rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</PrivacyContextModel:maxTimeDiff>
+        <rdfs:label>PrivFeature Anonymity Speed Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxTimeDiff>2.3</PrivacyContextModel:maxTimeDiff>
+        <rdfs:label>PrivFeature Anonymity Time 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxTimeDiff>4.0</PrivacyContextModel:maxTimeDiff>
+        <rdfs:label>PrivFeature Anonymity Time 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:maxTimeDiff>7.0</PrivacyContextModel:maxTimeDiff>
+        <rdfs:label>PrivFeature Anonymity Time 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</PrivacyContextModel:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</PrivacyContextModel:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</PrivacyContextModel:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</PrivacyContextModel:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</PrivacyContextModel:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</PrivacyContextModel:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Sabrina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Sabrina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+        <PrivacyContextModel:consentsTo rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzCalls"/>
+        <PrivacyContextModel:createsPP rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityCalls"/>
+        <PrivacyContextModel:createsPP rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityCalls"/>
+        <PrivacyContextModel:createsSit rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Calls"/>
+        <PrivacyContextModel:uses rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SabrinaCar"/>
+        <rdfs:label>Sabrina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SabrinaCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SabrinaCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle"/>
+        <rdfs:label>Sabrina Car</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+        <PrivacyContextModel:partOfVehicle rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SabrinaCar"/>
+        <rdfs:label>Speaker</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SteeringWheelAngle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SteeringWheelAngle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ChassisSteeringWheel"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering"/>
+        <rdfs:label>Steering Wheel Angle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Tim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Tim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+        <PrivacyContextModel:consentsTo rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzParkassistant"/>
+        <PrivacyContextModel:createsPP rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityParking"/>
+        <PrivacyContextModel:createsPP rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityParking"/>
+        <PrivacyContextModel:createsSit rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Parking"/>
+        <PrivacyContextModel:uses rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TimCar"/>
+        <rdfs:label>Tim</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TimCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TimCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle"/>
+        <rdfs:label>Tim Car</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TransmissionSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TransmissionSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        <PrivacyContextModel:belongsToVehicleComponent rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PowertrainTransmission"/>
+        <PrivacyContextModel:produces rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed"/>
+        <rdfs:label>Transmission Speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleFaceMonitoringData"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleHeadingData"/>
+        <rdfs:label>Vehicle Data: Heading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleIncomingAudioData"/>
+        <rdfs:label>Vehicle Data: Incoming Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LaneMonitoringData"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleLocationData"/>
+        <rdfs:label>Vehicle Data: Location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleOutgoingAudioData"/>
+        <rdfs:label>Vehicle Data: Outgoing Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSpeedData"/>
+        <rdfs:label>Vehicle Data: Speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSteeringData"/>
+        <rdfs:label>Vehicle Data: Steering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleTimeData"/>
+        <rdfs:label>Vehicle Data: Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:locDataQuality>0.53</PrivacyContextModel:locDataQuality>
+        <rdfs:label>Priv Feature (Anonymity, NearHome)_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+        <PrivacyContextModel:locDataQuality>1.76</PrivacyContextModel:locDataQuality>
+        <rdfs:label>Priv Feature (Anonymity, NearHome)_3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyProperty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleHeadingData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleLocationData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSpeedData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSteeringData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleTimeData"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1238 @@
+@prefix : <http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix PrivacyContextModel: <http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#> .
+@base <http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel> .
+
+<http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#achieves
+PrivacyContextModel:achieves rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain PrivacyContextModel:PrivacyPolicy ;
+                             rdfs:range PrivacyContextModel:PrivacyProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#activatesIn
+PrivacyContextModel:activatesIn rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                rdfs:domain PrivacyContextModel:PrivacyPolicy ;
+                                rdfs:range PrivacyContextModel:Situation .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#among
+PrivacyContextModel:among rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain PrivacyContextModel:DataDependency ;
+                          rdfs:range PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#appliesTo
+PrivacyContextModel:appliesTo rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf owl:topObjectProperty ;
+                              rdfs:domain PrivacyContextModel:PET ;
+                              rdfs:range PrivacyContextModel:VehicleProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#belongsToVehicleComponent
+PrivacyContextModel:belongsToVehicleComponent rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                              rdfs:domain PrivacyContextModel:VehicleProperty ;
+                                              rdfs:range PrivacyContextModel:VehicleComponent .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#consentsTo
+PrivacyContextModel:consentsTo rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain PrivacyContextModel:Driver ;
+                               rdfs:range PrivacyContextModel:ServiceSLA .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#createsPP
+PrivacyContextModel:createsPP rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf owl:topObjectProperty ;
+                              rdfs:domain PrivacyContextModel:Driver ;
+                              rdfs:range PrivacyContextModel:PrivacyPolicy .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#createsSit
+PrivacyContextModel:createsSit rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain PrivacyContextModel:Driver ;
+                               rdfs:range PrivacyContextModel:Situation .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#evaluatesOn
+PrivacyContextModel:evaluatesOn rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                rdfs:domain PrivacyContextModel:Situation ;
+                                rdfs:range PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasFeature
+PrivacyContextModel:hasFeature rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain PrivacyContextModel:PET ;
+                               rdfs:range PrivacyContextModel:PrivFeature .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasInput
+PrivacyContextModel:hasInput rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain PrivacyContextModel:PET ;
+                             rdfs:range PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#hasSLA
+PrivacyContextModel:hasSLA rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdfs:domain PrivacyContextModel:Service ;
+                           rdfs:range PrivacyContextModel:ServiceSLA .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#partOf
+PrivacyContextModel:partOf rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdfs:domain PrivacyContextModel:VehicleComponent ;
+                           rdfs:range PrivacyContextModel:VehicleComponent .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#partOfVehicle
+PrivacyContextModel:partOfVehicle rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                  rdfs:domain PrivacyContextModel:VehicleComponent ;
+                                  rdfs:range PrivacyContextModel:Vehicle .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#produces
+PrivacyContextModel:produces rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain PrivacyContextModel:VehicleProperty ;
+                             rdfs:range PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#protects
+PrivacyContextModel:protects rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain PrivacyContextModel:PrivacyPolicy ;
+                             rdfs:range PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#provides
+PrivacyContextModel:provides rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain PrivacyContextModel:PET ;
+                             rdfs:range PrivacyContextModel:PrivacyProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#requestsDataFrom
+PrivacyContextModel:requestsDataFrom rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                     rdfs:domain PrivacyContextModel:Service ;
+                                     rdfs:range PrivacyContextModel:VehicleComponent ,
+                                                PrivacyContextModel:VehicleProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#targetsService
+PrivacyContextModel:targetsService rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:domain PrivacyContextModel:PrivacyPolicy ;
+                                   rdfs:range PrivacyContextModel:Service .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#uses
+PrivacyContextModel:uses rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain PrivacyContextModel:Driver ;
+                         rdfs:range PrivacyContextModel:Vehicle .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#usesPET
+PrivacyContextModel:usesPET rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdfs:domain PrivacyContextModel:PrivacyPolicy ;
+                            rdfs:range PrivacyContextModel:PET .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#capacity
+PrivacyContextModel:capacity rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#latency
+PrivacyContextModel:latency rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#locDataQuality
+PrivacyContextModel:locDataQuality rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxDegreeDiff
+PrivacyContextModel:maxDegreeDiff rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxSpeedDiff
+PrivacyContextModel:maxSpeedDiff rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#maxTimeDiff
+PrivacyContextModel:maxTimeDiff rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#threshold
+PrivacyContextModel:threshold rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#DataDependency
+PrivacyContextModel:DataDependency rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Driver
+PrivacyContextModel:Driver rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LaneMonitoringData
+PrivacyContextModel:LaneMonitoringData rdf:type owl:Class ;
+                                       rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET
+PrivacyContextModel:PET rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature
+PrivacyContextModel:PrivFeature rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyPolicy
+PrivacyContextModel:PrivacyPolicy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivacyProperty
+PrivacyContextModel:PrivacyProperty rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Service
+PrivacyContextModel:Service rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ServiceSLA
+PrivacyContextModel:ServiceSLA rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Situation
+PrivacyContextModel:Situation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Vehicle
+PrivacyContextModel:Vehicle rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleComponent
+PrivacyContextModel:VehicleComponent rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleData
+PrivacyContextModel:VehicleData rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleFaceMonitoringData
+PrivacyContextModel:VehicleFaceMonitoringData rdf:type owl:Class ;
+                                              rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleHeadingData
+PrivacyContextModel:VehicleHeadingData rdf:type owl:Class ;
+                                       rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleIncomingAudioData
+PrivacyContextModel:VehicleIncomingAudioData rdf:type owl:Class ;
+                                             rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleLocationData
+PrivacyContextModel:VehicleLocationData rdf:type owl:Class ;
+                                        rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleOutgoingAudioData
+PrivacyContextModel:VehicleOutgoingAudioData rdf:type owl:Class ;
+                                             rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleProperty
+PrivacyContextModel:VehicleProperty rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSpeedData
+PrivacyContextModel:VehicleSpeedData rdf:type owl:Class ;
+                                     rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleSteeringData
+PrivacyContextModel:VehicleSteeringData rdf:type owl:Class ;
+                                        rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VehicleTimeData
+PrivacyContextModel:VehicleTimeData rdf:type owl:Class ;
+                                    rdfs:subClassOf PrivacyContextModel:VehicleData .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Alex
+PrivacyContextModel:Alex rdf:type owl:NamedIndividual ,
+                                  PrivacyContextModel:Driver ;
+                         PrivacyContextModel:consentsTo PrivacyContextModel:Attentiveness_Detection_SLA ,
+                                                        PrivacyContextModel:NaviSLA ;
+                         PrivacyContextModel:createsPP PrivacyContextModel:PPAnonymityFreeway ,
+                                                       PrivacyContextModel:PPAnonymityNearHome ,
+                                                       PrivacyContextModel:PPConfidentialityFreeway ;
+                         PrivacyContextModel:createsSit PrivacyContextModel:Freeway ,
+                                                        PrivacyContextModel:NearHome ;
+                         PrivacyContextModel:uses PrivacyContextModel:AlexCar ;
+                         rdfs:label "Alex" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#AlexCar
+PrivacyContextModel:AlexCar rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:Vehicle ;
+                            rdfs:label "Alex Car" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Anonymity
+PrivacyContextModel:Anonymity rdf:type owl:NamedIndividual ,
+                                       PrivacyContextModel:PrivacyProperty ;
+                              rdfs:label "Anonymity" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection
+PrivacyContextModel:Attentiveness_Detection rdf:type owl:NamedIndividual ,
+                                                     PrivacyContextModel:Service ;
+                                            PrivacyContextModel:hasSLA PrivacyContextModel:Attentiveness_Detection_SLA ;
+                                            PrivacyContextModel:requestsDataFrom PrivacyContextModel:Camera ,
+                                                                                 PrivacyContextModel:ChassisSteeringWheel ,
+                                                                                 PrivacyContextModel:Lane_Detection ;
+                                            rdfs:label "Attentiveness Detection" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Attentiveness_Detection_SLA
+PrivacyContextModel:Attentiveness_Detection_SLA rdf:type owl:NamedIndividual ,
+                                                         PrivacyContextModel:ServiceSLA ;
+                                                PrivacyContextModel:capacity 9 ;
+                                                PrivacyContextModel:threshold 5 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Benz
+PrivacyContextModel:Benz rdf:type owl:NamedIndividual ,
+                                  PrivacyContextModel:Service ;
+                         PrivacyContextModel:hasSLA PrivacyContextModel:BenzCalls ,
+                                                    PrivacyContextModel:BenzParkassistant ;
+                         PrivacyContextModel:requestsDataFrom PrivacyContextModel:ChassisSteeringWheel ,
+                                                              PrivacyContextModel:Microphone ,
+                                                              PrivacyContextModel:PowertrainTransmission ,
+                                                              PrivacyContextModel:Speaker ;
+                         rdfs:label "Benz" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzCalls
+PrivacyContextModel:BenzCalls rdf:type owl:NamedIndividual ,
+                                       PrivacyContextModel:ServiceSLA ;
+                              rdfs:label "Benz Calls" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#BenzParkassistant
+PrivacyContextModel:BenzParkassistant rdf:type owl:NamedIndividual ,
+                                               PrivacyContextModel:ServiceSLA ;
+                                      rdfs:label "Benz Parkassistent" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Calls
+PrivacyContextModel:Calls rdf:type owl:NamedIndividual ,
+                                   PrivacyContextModel:Situation ;
+                          PrivacyContextModel:evaluatesOn PrivacyContextModel:VDIncomingAudio ,
+                                                          PrivacyContextModel:VDLocation ,
+                                                          PrivacyContextModel:VDOutgoingAudio ;
+                          rdfs:label "Calls" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#CallsDD
+PrivacyContextModel:CallsDD rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:DataDependency ;
+                            PrivacyContextModel:among PrivacyContextModel:VDHeading ,
+                                                      PrivacyContextModel:VDIncomingAudio ,
+                                                      PrivacyContextModel:VDLocation ,
+                                                      PrivacyContextModel:VDOutgoingAudio ,
+                                                      PrivacyContextModel:VDTime ;
+                            rdfs:label "Calls Data Dependency" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Camera
+PrivacyContextModel:Camera rdf:type owl:NamedIndividual ,
+                                    PrivacyContextModel:VehicleComponent ;
+                           PrivacyContextModel:partOfVehicle PrivacyContextModel:AlexCar .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ChassisSteeringWheel
+PrivacyContextModel:ChassisSteeringWheel rdf:type owl:NamedIndividual ,
+                                                  PrivacyContextModel:VehicleComponent ;
+                                         PrivacyContextModel:partOfVehicle PrivacyContextModel:AlexCar ,
+                                                                           PrivacyContextModel:TimCar ;
+                                         rdfs:label "Chassis Steering Wheel" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Confidentiality
+PrivacyContextModel:Confidentiality rdf:type owl:NamedIndividual ,
+                                             PrivacyContextModel:PrivacyProperty ;
+                                    rdfs:label "Confidentiality" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Freeway
+PrivacyContextModel:Freeway rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:Situation ;
+                            PrivacyContextModel:evaluatesOn PrivacyContextModel:VDFaceMonitoring .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#FreewayDD
+PrivacyContextModel:FreewayDD rdf:type owl:NamedIndividual ,
+                                       PrivacyContextModel:DataDependency ;
+                              PrivacyContextModel:among PrivacyContextModel:VDFaceMonitoring ,
+                                                        PrivacyContextModel:VDLaneMonitoring ,
+                                                        PrivacyContextModel:VDSteering .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#IncomingAudio
+PrivacyContextModel:IncomingAudio rdf:type owl:NamedIndividual ,
+                                           PrivacyContextModel:VehicleProperty ;
+                                  PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:Microphone ;
+                                  PrivacyContextModel:produces PrivacyContextModel:VDIncomingAudio ;
+                                  rdfs:label "Incoming Audio" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#InfotainmentNavigation
+PrivacyContextModel:InfotainmentNavigation rdf:type owl:NamedIndividual ,
+                                                    PrivacyContextModel:VehicleComponent ;
+                                           PrivacyContextModel:partOfVehicle PrivacyContextModel:AlexCar ;
+                                           rdfs:label "Infotainment Navigation" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Interior_Camera
+PrivacyContextModel:Interior_Camera rdf:type owl:NamedIndividual ,
+                                             PrivacyContextModel:VehicleProperty ;
+                                    PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:Camera ;
+                                    PrivacyContextModel:produces PrivacyContextModel:VDFaceMonitoring .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LaneDepartureDetectionWarning
+PrivacyContextModel:LaneDepartureDetectionWarning rdf:type owl:NamedIndividual ,
+                                                           PrivacyContextModel:VehicleProperty ;
+                                                  PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:Lane_Detection ;
+                                                  PrivacyContextModel:produces PrivacyContextModel:VDLaneMonitoring .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Lane_Detection
+PrivacyContextModel:Lane_Detection rdf:type owl:NamedIndividual ,
+                                            PrivacyContextModel:VehicleComponent ;
+                                   PrivacyContextModel:partOfVehicle PrivacyContextModel:AlexCar .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#LocationDD
+PrivacyContextModel:LocationDD rdf:type owl:NamedIndividual ,
+                                        PrivacyContextModel:DataDependency ;
+                               PrivacyContextModel:among PrivacyContextModel:VDHeading ,
+                                                         PrivacyContextModel:VDLocation ,
+                                                         PrivacyContextModel:VDSpeed ,
+                                                         PrivacyContextModel:VDTime ;
+                               rdfs:label "Location Data Dependency" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Microphone
+PrivacyContextModel:Microphone rdf:type owl:NamedIndividual ,
+                                        PrivacyContextModel:VehicleComponent ;
+                               PrivacyContextModel:partOfVehicle PrivacyContextModel:SabrinaCar ;
+                               rdfs:label "Microphone" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityCalls
+PrivacyContextModel:NMixAnonymityCalls rdf:type owl:NamedIndividual ,
+                                                PrivacyContextModel:PET ;
+                                       PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeatureAnonymityCalls ;
+                                       PrivacyContextModel:hasInput PrivacyContextModel:VDLocation ;
+                                       PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                       rdfs:label "N Mix Anonymity Calls" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityNearHome_1
+PrivacyContextModel:NMixAnonymityNearHome_1 rdf:type owl:NamedIndividual ,
+                                                     PrivacyContextModel:PET ;
+                                            PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeatureAnonymityNearHome_1 ;
+                                            PrivacyContextModel:hasInput PrivacyContextModel:VDLocation ;
+                                            PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                            rdfs:label "N Mix Anonymity Near Home_1" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixAnonymityParking
+PrivacyContextModel:NMixAnonymityParking rdf:type owl:NamedIndividual ,
+                                                  PrivacyContextModel:PET ;
+                                         PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeatureAnonymityParking ;
+                                         PrivacyContextModel:hasInput PrivacyContextModel:VDLocation ;
+                                         PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                         rdfs:label "N Mix Anonymity Parking" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixConfidentialityCalls
+PrivacyContextModel:NMixConfidentialityCalls rdf:type owl:NamedIndividual ,
+                                                      PrivacyContextModel:PET ;
+                                             PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeatureConfidentialityCalls ;
+                                             PrivacyContextModel:hasInput PrivacyContextModel:VDHeading ,
+                                                                          PrivacyContextModel:VDIncomingAudio ,
+                                                                          PrivacyContextModel:VDOutgoingAudio ;
+                                             PrivacyContextModel:provides PrivacyContextModel:Confidentiality ;
+                                             rdfs:label "N Mix Confidentiality Calls" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NMixConfidentialityParking
+PrivacyContextModel:NMixConfidentialityParking rdf:type owl:NamedIndividual ,
+                                                        PrivacyContextModel:PET ;
+                                               PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeatureConfidentialityParking ;
+                                               PrivacyContextModel:hasInput PrivacyContextModel:VDSpeed ,
+                                                                            PrivacyContextModel:VDSteering ;
+                                               PrivacyContextModel:provides PrivacyContextModel:Confidentiality ;
+                                               rdfs:label "N Mix Confidentiality Parking" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#N_Mix_Anonymity_Calls_3
+PrivacyContextModel:N_Mix_Anonymity_Calls_3 rdf:type owl:NamedIndividual ,
+                                                     PrivacyContextModel:PET ;
+                                            PrivacyContextModel:hasFeature <http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_3> ;
+                                            PrivacyContextModel:hasInput PrivacyContextModel:VDLocation ;
+                                            PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                            rdfs:label "N Mix Anonymity NearHome_3" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#N_Mix_Anonymity_NearHome_2
+PrivacyContextModel:N_Mix_Anonymity_NearHome_2 rdf:type owl:NamedIndividual ,
+                                                        PrivacyContextModel:PET ;
+                                               PrivacyContextModel:hasFeature <http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_2> ;
+                                               PrivacyContextModel:hasInput PrivacyContextModel:VDLocation ;
+                                               PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                               rdfs:label "N Mix Anonymity NearHome_2" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviApp
+PrivacyContextModel:NaviApp rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:Service ;
+                            PrivacyContextModel:hasSLA PrivacyContextModel:NaviSLA ;
+                            PrivacyContextModel:requestsDataFrom PrivacyContextModel:InfotainmentNavigation ,
+                                                                 PrivacyContextModel:PowertrainTransmission ;
+                            rdfs:label "Navi App" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviSLA
+PrivacyContextModel:NaviSLA rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:ServiceSLA ;
+                            PrivacyContextModel:locDataQuality "1.0" ;
+                            PrivacyContextModel:maxDegreeDiff 10 ;
+                            PrivacyContextModel:maxSpeedDiff 6 ;
+                            PrivacyContextModel:maxTimeDiff 5 ;
+                            rdfs:label "Navi SLA" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NaviSpeed
+PrivacyContextModel:NaviSpeed rdf:type owl:NamedIndividual ,
+                                       PrivacyContextModel:VehicleProperty ;
+                              PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:InfotainmentNavigation ;
+                              PrivacyContextModel:produces PrivacyContextModel:VDSpeed ;
+                              rdfs:label "Navi Speed" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_CurrentClockTime
+PrivacyContextModel:Navi_CurrentClockTime rdf:type owl:NamedIndividual ,
+                                                   PrivacyContextModel:VehicleProperty ;
+                                          PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:InfotainmentNavigation ;
+                                          PrivacyContextModel:produces PrivacyContextModel:VDTime ;
+                                          rdfs:label "Navi CurrentClockTime" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_Heading
+PrivacyContextModel:Navi_Heading rdf:type owl:NamedIndividual ,
+                                          PrivacyContextModel:VehicleProperty ;
+                                 PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:InfotainmentNavigation ;
+                                 PrivacyContextModel:produces PrivacyContextModel:VDHeading ;
+                                 rdfs:label "Navi Heading" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Navi_Location
+PrivacyContextModel:Navi_Location rdf:type owl:NamedIndividual ,
+                                           PrivacyContextModel:VehicleProperty ;
+                                  PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:InfotainmentNavigation ;
+                                  PrivacyContextModel:produces PrivacyContextModel:VDLocation ;
+                                  rdfs:label "Navi Location" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#NearHome
+PrivacyContextModel:NearHome rdf:type owl:NamedIndividual ,
+                                      PrivacyContextModel:Situation ;
+                             PrivacyContextModel:evaluatesOn PrivacyContextModel:VDLocation ;
+                             rdfs:label "Near Home" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#OutgoingAudio
+PrivacyContextModel:OutgoingAudio rdf:type owl:NamedIndividual ,
+                                           PrivacyContextModel:VehicleProperty ;
+                                  PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:Speaker ;
+                                  PrivacyContextModel:produces PrivacyContextModel:VDOutgoingAudio ;
+                                  rdfs:label "Outgoing Audio" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1
+PrivacyContextModel:PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1 rdf:type owl:NamedIndividual ,
+                                                                                PrivacyContextModel:PET ;
+                                                                       PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_CaDaA_1 ;
+                                                                       PrivacyContextModel:hasInput PrivacyContextModel:VDFaceMonitoring ;
+                                                                       PrivacyContextModel:provides PrivacyContextModel:Anonymity .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2
+PrivacyContextModel:PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2 rdf:type owl:NamedIndividual ,
+                                                                                PrivacyContextModel:PET ;
+                                                                       PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_CaDaA_2 ;
+                                                                       PrivacyContextModel:hasInput PrivacyContextModel:VDFaceMonitoring ;
+                                                                       PrivacyContextModel:provides PrivacyContextModel:Anonymity .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3
+PrivacyContextModel:PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3 rdf:type owl:NamedIndividual ,
+                                                                                PrivacyContextModel:PET ;
+                                                                       PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_CaDaA_3 ;
+                                                                       PrivacyContextModel:hasInput PrivacyContextModel:VDFaceMonitoring ;
+                                                                       PrivacyContextModel:provides PrivacyContextModel:Anonymity .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_1
+PrivacyContextModel:PET_Anonymity_Heading_1 rdf:type owl:NamedIndividual ,
+                                                     PrivacyContextModel:PET ;
+                                            PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Heading_1 ;
+                                            PrivacyContextModel:hasInput PrivacyContextModel:VDHeading ;
+                                            PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                            rdfs:label "PET Anonymity Heading 1" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_2
+PrivacyContextModel:PET_Anonymity_Heading_2 rdf:type owl:NamedIndividual ,
+                                                     PrivacyContextModel:PET ;
+                                            PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Heading_2 ;
+                                            PrivacyContextModel:hasInput PrivacyContextModel:VDHeading ;
+                                            PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                            rdfs:label "PET Anonymity Heading 2" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_3
+PrivacyContextModel:PET_Anonymity_Heading_3 rdf:type owl:NamedIndividual ,
+                                                     PrivacyContextModel:PET ;
+                                            PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Heading_3 ;
+                                            PrivacyContextModel:hasInput PrivacyContextModel:VDHeading ;
+                                            PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                            rdfs:label "PET Anonymity Heading 3" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Location
+PrivacyContextModel:PET_Anonymity_Heading_Location rdf:type owl:NamedIndividual ,
+                                                            PrivacyContextModel:PET ;
+                                                   PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Heading_Location ;
+                                                   PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                                   rdfs:label "PET Anonymity Heading Location" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Location_Speed_Time
+PrivacyContextModel:PET_Anonymity_Heading_Location_Speed_Time rdf:type owl:NamedIndividual ,
+                                                                       PrivacyContextModel:PET ;
+                                                              PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Heading_Location_Speed_Time ;
+                                                              PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                                              rdfs:label "PET Anonymity Heading Location Speed Time" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Heading_Speed_Time
+PrivacyContextModel:PET_Anonymity_Heading_Speed_Time rdf:type owl:NamedIndividual ,
+                                                              PrivacyContextModel:PET ;
+                                                     PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Heading_Speed_Time ;
+                                                     PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                                     rdfs:label "PET Anonymity Heading Speed Time" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_1
+PrivacyContextModel:PET_Anonymity_Speed_1 rdf:type owl:NamedIndividual ,
+                                                   PrivacyContextModel:PET ;
+                                          PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Speed_1 ;
+                                          PrivacyContextModel:hasInput PrivacyContextModel:VDSpeed ;
+                                          PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                          rdfs:label "PET Anonymity Speed 1" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_2
+PrivacyContextModel:PET_Anonymity_Speed_2 rdf:type owl:NamedIndividual ,
+                                                   PrivacyContextModel:PET ;
+                                          PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Speed_2 ;
+                                          PrivacyContextModel:hasInput PrivacyContextModel:VDSpeed ;
+                                          PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                          rdfs:label "PET Anonymity Speed 2" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_3
+PrivacyContextModel:PET_Anonymity_Speed_3 rdf:type owl:NamedIndividual ,
+                                                   PrivacyContextModel:PET ;
+                                          PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Speed_3 ;
+                                          PrivacyContextModel:hasInput PrivacyContextModel:VDSpeed ;
+                                          PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                          rdfs:label "PET Anonymity Speed 3" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Speed_Time
+PrivacyContextModel:PET_Anonymity_Speed_Time rdf:type owl:NamedIndividual ,
+                                                      PrivacyContextModel:PET ;
+                                             PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Speed_Time ;
+                                             PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                             rdfs:label "PET Anonymity Speed Time" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_1
+PrivacyContextModel:PET_Anonymity_Time_1 rdf:type owl:NamedIndividual ,
+                                                  PrivacyContextModel:PET ;
+                                         PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Time_1 ;
+                                         PrivacyContextModel:hasInput PrivacyContextModel:VDTime ;
+                                         PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                         rdfs:label "PET Anonymity Time 1" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_2
+PrivacyContextModel:PET_Anonymity_Time_2 rdf:type owl:NamedIndividual ,
+                                                  PrivacyContextModel:PET ;
+                                         PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Time_2 ;
+                                         PrivacyContextModel:hasInput PrivacyContextModel:VDTime ;
+                                         PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                         rdfs:label "PET Anonymity Time 2" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Anonymity_Time_3
+PrivacyContextModel:PET_Anonymity_Time_3 rdf:type owl:NamedIndividual ,
+                                                  PrivacyContextModel:PET ;
+                                         PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Anonymity_Time_3 ;
+                                         PrivacyContextModel:hasInput PrivacyContextModel:VDTime ;
+                                         PrivacyContextModel:provides PrivacyContextModel:Anonymity ;
+                                         rdfs:label "PET Anonymity Time 3" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_1
+PrivacyContextModel:PET_Confidentiality_FederatedLearning_Steering_1 rdf:type owl:NamedIndividual ,
+                                                                              PrivacyContextModel:PET ;
+                                                                     PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Confidentiality_FL_Steering_1 ;
+                                                                     PrivacyContextModel:hasInput PrivacyContextModel:VDSteering ;
+                                                                     PrivacyContextModel:provides PrivacyContextModel:Confidentiality .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_2
+PrivacyContextModel:PET_Confidentiality_FederatedLearning_Steering_2 rdf:type owl:NamedIndividual ,
+                                                                              PrivacyContextModel:PET ;
+                                                                     PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Confidentiality_FL_Steering_2 ;
+                                                                     PrivacyContextModel:hasInput PrivacyContextModel:VDSteering ;
+                                                                     PrivacyContextModel:provides PrivacyContextModel:Confidentiality .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentiality_FederatedLearning_Steering_3
+PrivacyContextModel:PET_Confidentiality_FederatedLearning_Steering_3 rdf:type owl:NamedIndividual ,
+                                                                              PrivacyContextModel:PET ;
+                                                                     PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Confidentiality_FL_Steering_3 ;
+                                                                     PrivacyContextModel:hasInput PrivacyContextModel:VDSteering ;
+                                                                     PrivacyContextModel:provides PrivacyContextModel:Confidentiality .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_1
+PrivacyContextModel:PET_Confidentialiy_FederatedLearning_LaneMonitoring_1 rdf:type owl:NamedIndividual ,
+                                                                                   PrivacyContextModel:PET ;
+                                                                          PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Confidentiality_FL_LaneMonitoring_1 ;
+                                                                          PrivacyContextModel:hasInput PrivacyContextModel:VDLaneMonitoring ;
+                                                                          PrivacyContextModel:provides PrivacyContextModel:Confidentiality .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_2
+PrivacyContextModel:PET_Confidentialiy_FederatedLearning_LaneMonitoring_2 rdf:type owl:NamedIndividual ,
+                                                                                   PrivacyContextModel:PET ;
+                                                                          PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Confidentiality_FL_LaneMonitoring_2 ;
+                                                                          PrivacyContextModel:hasInput PrivacyContextModel:VDLaneMonitoring ;
+                                                                          PrivacyContextModel:provides PrivacyContextModel:Confidentiality .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PET_Confidentialiy_FederatedLearning_LaneMonitoring_3
+PrivacyContextModel:PET_Confidentialiy_FederatedLearning_LaneMonitoring_3 rdf:type owl:NamedIndividual ,
+                                                                                   PrivacyContextModel:PET ;
+                                                                          PrivacyContextModel:hasFeature PrivacyContextModel:PrivFeature_Confidentiality_FL_LaneMonitoring_3 ;
+                                                                          PrivacyContextModel:hasInput PrivacyContextModel:VDLaneMonitoring ;
+                                                                          PrivacyContextModel:provides PrivacyContextModel:Confidentiality .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityCalls
+PrivacyContextModel:PPAnonymityCalls rdf:type owl:NamedIndividual ,
+                                              PrivacyContextModel:PrivacyPolicy ;
+                                     PrivacyContextModel:achieves PrivacyContextModel:Anonymity ;
+                                     PrivacyContextModel:activatesIn PrivacyContextModel:Calls ;
+                                     PrivacyContextModel:protects PrivacyContextModel:VDHeading ,
+                                                                  PrivacyContextModel:VDIncomingAudio ,
+                                                                  PrivacyContextModel:VDLocation ,
+                                                                  PrivacyContextModel:VDOutgoingAudio ,
+                                                                  PrivacyContextModel:VDTime ;
+                                     PrivacyContextModel:targetsService PrivacyContextModel:Benz ;
+                                     rdfs:label "Privacy Policy (Anonymity, Calls)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityFreeway
+PrivacyContextModel:PPAnonymityFreeway rdf:type owl:NamedIndividual ,
+                                                PrivacyContextModel:PrivacyPolicy ;
+                                       PrivacyContextModel:achieves PrivacyContextModel:Anonymity ;
+                                       PrivacyContextModel:activatesIn PrivacyContextModel:Freeway ;
+                                       PrivacyContextModel:protects PrivacyContextModel:VDFaceMonitoring ;
+                                       PrivacyContextModel:targetsService PrivacyContextModel:Attentiveness_Detection .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityNearHome
+PrivacyContextModel:PPAnonymityNearHome rdf:type owl:NamedIndividual ,
+                                                 PrivacyContextModel:PrivacyPolicy ;
+                                        PrivacyContextModel:achieves PrivacyContextModel:Anonymity ;
+                                        PrivacyContextModel:activatesIn PrivacyContextModel:NearHome ;
+                                        PrivacyContextModel:protects PrivacyContextModel:VDLocation ;
+                                        PrivacyContextModel:targetsService PrivacyContextModel:NaviApp ;
+                                        rdfs:label "Privacy Policy (Anonymity, Near Home)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPAnonymityParking
+PrivacyContextModel:PPAnonymityParking rdf:type owl:NamedIndividual ,
+                                                PrivacyContextModel:PrivacyPolicy ;
+                                       PrivacyContextModel:achieves PrivacyContextModel:Anonymity ;
+                                       PrivacyContextModel:activatesIn PrivacyContextModel:Parking ;
+                                       PrivacyContextModel:protects PrivacyContextModel:VDHeading ,
+                                                                    PrivacyContextModel:VDLocation ,
+                                                                    PrivacyContextModel:VDSpeed ,
+                                                                    PrivacyContextModel:VDTime ;
+                                       PrivacyContextModel:targetsService PrivacyContextModel:Benz ;
+                                       rdfs:label "Privacy Policy (Anonymity, Parking)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityCalls
+PrivacyContextModel:PPConfidentialityCalls rdf:type owl:NamedIndividual ,
+                                                    PrivacyContextModel:PrivacyPolicy ;
+                                           PrivacyContextModel:achieves PrivacyContextModel:Confidentiality ;
+                                           PrivacyContextModel:activatesIn PrivacyContextModel:Calls ;
+                                           PrivacyContextModel:protects PrivacyContextModel:VDIncomingAudio ,
+                                                                        PrivacyContextModel:VDOutgoingAudio ;
+                                           PrivacyContextModel:targetsService PrivacyContextModel:Benz ;
+                                           rdfs:label "Privacy Policy (Confidentiality, Calls)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityFreeway
+PrivacyContextModel:PPConfidentialityFreeway rdf:type owl:NamedIndividual ,
+                                                      PrivacyContextModel:PrivacyPolicy ;
+                                             PrivacyContextModel:achieves PrivacyContextModel:Confidentiality ;
+                                             PrivacyContextModel:activatesIn PrivacyContextModel:Freeway ;
+                                             PrivacyContextModel:protects PrivacyContextModel:VDLaneMonitoring ,
+                                                                          PrivacyContextModel:VDSteering ;
+                                             PrivacyContextModel:targetsService PrivacyContextModel:Attentiveness_Detection .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PPConfidentialityParking
+PrivacyContextModel:PPConfidentialityParking rdf:type owl:NamedIndividual ,
+                                                      PrivacyContextModel:PrivacyPolicy ;
+                                             PrivacyContextModel:achieves PrivacyContextModel:Confidentiality ;
+                                             PrivacyContextModel:activatesIn PrivacyContextModel:Parking ;
+                                             PrivacyContextModel:protects PrivacyContextModel:VDSpeed ,
+                                                                          PrivacyContextModel:VDSteering ;
+                                             PrivacyContextModel:targetsService PrivacyContextModel:Benz ;
+                                             rdfs:label "Privacy Policy (Confidentiality, Parking)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Parking
+PrivacyContextModel:Parking rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:Situation ;
+                            PrivacyContextModel:evaluatesOn PrivacyContextModel:VDLocation ,
+                                                            PrivacyContextModel:VDSteering ;
+                            rdfs:label "Parking" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#ParkingDD
+PrivacyContextModel:ParkingDD rdf:type owl:NamedIndividual ,
+                                       PrivacyContextModel:DataDependency ;
+                              PrivacyContextModel:among PrivacyContextModel:VDHeading ,
+                                                        PrivacyContextModel:VDLocation ,
+                                                        PrivacyContextModel:VDSpeed ,
+                                                        PrivacyContextModel:VDSteering ,
+                                                        PrivacyContextModel:VDTime ;
+                              rdfs:label "Parking Data Dependency" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PowertrainTransmission
+PrivacyContextModel:PowertrainTransmission rdf:type owl:NamedIndividual ,
+                                                    PrivacyContextModel:VehicleComponent ;
+                                           PrivacyContextModel:partOfVehicle PrivacyContextModel:AlexCar ,
+                                                                             PrivacyContextModel:TimCar ;
+                                           rdfs:label "Powertrain Transmission" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityCalls
+PrivacyContextModel:PrivFeatureAnonymityCalls rdf:type owl:NamedIndividual ,
+                                                       PrivacyContextModel:PrivFeature ;
+                                              rdfs:label "Priv Feature (Anonymity, Calls)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityNearHome_1
+PrivacyContextModel:PrivFeatureAnonymityNearHome_1 rdf:type owl:NamedIndividual ,
+                                                            PrivacyContextModel:PrivFeature ;
+                                                   PrivacyContextModel:locDataQuality "1.0" ;
+                                                   rdfs:label "Priv Feature (Anonymity, Near Home)_1" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureAnonymityParking
+PrivacyContextModel:PrivFeatureAnonymityParking rdf:type owl:NamedIndividual ,
+                                                         PrivacyContextModel:PrivFeature ;
+                                                rdfs:label "Priv Feature (Anonymity, Parking)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureConfidentialityCalls
+PrivacyContextModel:PrivFeatureConfidentialityCalls rdf:type owl:NamedIndividual ,
+                                                             PrivacyContextModel:PrivFeature ;
+                                                    rdfs:label "Priv Feature (Confidentiality, Calls)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeatureConfidentialityParking
+PrivacyContextModel:PrivFeatureConfidentialityParking rdf:type owl:NamedIndividual ,
+                                                               PrivacyContextModel:PrivFeature ;
+                                                      rdfs:label "Priv Feature (Confidentiality, Parking)" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_1
+PrivacyContextModel:PrivFeature_Anonymity_CaDaA_1 rdf:type owl:NamedIndividual ,
+                                                           PrivacyContextModel:PrivFeature ;
+                                                  PrivacyContextModel:threshold 3 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_2
+PrivacyContextModel:PrivFeature_Anonymity_CaDaA_2 rdf:type owl:NamedIndividual ,
+                                                           PrivacyContextModel:PrivFeature ;
+                                                  PrivacyContextModel:threshold 4 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_CaDaA_3
+PrivacyContextModel:PrivFeature_Anonymity_CaDaA_3 rdf:type owl:NamedIndividual ,
+                                                           PrivacyContextModel:PrivFeature ;
+                                                  PrivacyContextModel:threshold 6 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_1
+PrivacyContextModel:PrivFeature_Anonymity_Heading_1 rdf:type owl:NamedIndividual ,
+                                                             PrivacyContextModel:PrivFeature ;
+                                                    PrivacyContextModel:maxDegreeDiff "1.2" ;
+                                                    rdfs:label "PrivFeature Anonymity Heading 1" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_2
+PrivacyContextModel:PrivFeature_Anonymity_Heading_2 rdf:type owl:NamedIndividual ,
+                                                             PrivacyContextModel:PrivFeature ;
+                                                    PrivacyContextModel:maxDegreeDiff "8.7" ;
+                                                    rdfs:label "PrivFeature Anonymity Heading 2" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_3
+PrivacyContextModel:PrivFeature_Anonymity_Heading_3 rdf:type owl:NamedIndividual ,
+                                                             PrivacyContextModel:PrivFeature ;
+                                                    PrivacyContextModel:maxDegreeDiff "14.3" ;
+                                                    rdfs:label "PrivFeature Anonymity Heading 3" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Location
+PrivacyContextModel:PrivFeature_Anonymity_Heading_Location rdf:type owl:NamedIndividual ,
+                                                                    PrivacyContextModel:PrivFeature ;
+                                                           PrivacyContextModel:latency 14 ;
+                                                           PrivacyContextModel:locDataQuality 0.2 ;
+                                                           PrivacyContextModel:maxDegreeDiff 11.3 ;
+                                                           rdfs:label "PrivFeature Anonymity Heading Location" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Location_Speed_Time
+PrivacyContextModel:PrivFeature_Anonymity_Heading_Location_Speed_Time rdf:type owl:NamedIndividual ,
+                                                                               PrivacyContextModel:PrivFeature ;
+                                                                      PrivacyContextModel:latency 19 ;
+                                                                      PrivacyContextModel:locDataQuality 0.9 ;
+                                                                      PrivacyContextModel:maxDegreeDiff 4.6 ;
+                                                                      PrivacyContextModel:maxSpeedDiff 4.8 ;
+                                                                      PrivacyContextModel:maxTimeDiff 4.1 ;
+                                                                      rdfs:label "PrivFeature Anonymity Heading Location Speed Time" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Heading_Speed_Time
+PrivacyContextModel:PrivFeature_Anonymity_Heading_Speed_Time rdf:type owl:NamedIndividual ,
+                                                                      PrivacyContextModel:PrivFeature ;
+                                                             PrivacyContextModel:maxDegreeDiff 4.3 ;
+                                                             PrivacyContextModel:maxSpeedDiff 2.4 ;
+                                                             PrivacyContextModel:maxTimeDiff 18 ,
+                                                                                             3 ;
+                                                             rdfs:label "PrivFeature Anonymity Heading Speed Time" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_1
+PrivacyContextModel:PrivFeature_Anonymity_Speed_1 rdf:type owl:NamedIndividual ,
+                                                           PrivacyContextModel:PrivFeature ;
+                                                  PrivacyContextModel:maxSpeedDiff "2.1" ;
+                                                  rdfs:label "PrivFeature Anonymity Speed 1" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_2
+PrivacyContextModel:PrivFeature_Anonymity_Speed_2 rdf:type owl:NamedIndividual ,
+                                                           PrivacyContextModel:PrivFeature ;
+                                                  PrivacyContextModel:maxSpeedDiff "6.0" ;
+                                                  rdfs:label "PrivFeature Anonymity Speed 2" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_3
+PrivacyContextModel:PrivFeature_Anonymity_Speed_3 rdf:type owl:NamedIndividual ,
+                                                           PrivacyContextModel:PrivFeature ;
+                                                  PrivacyContextModel:maxSpeedDiff "7.25" ;
+                                                  rdfs:label "PrivFeature Anonymity Speed 3" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Speed_Time
+PrivacyContextModel:PrivFeature_Anonymity_Speed_Time rdf:type owl:NamedIndividual ,
+                                                              PrivacyContextModel:PrivFeature ;
+                                                     PrivacyContextModel:latency 17 ;
+                                                     PrivacyContextModel:maxSpeedDiff 3.2 ;
+                                                     PrivacyContextModel:maxTimeDiff 3.8 ;
+                                                     rdfs:label "PrivFeature Anonymity Speed Time" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_1
+PrivacyContextModel:PrivFeature_Anonymity_Time_1 rdf:type owl:NamedIndividual ,
+                                                          PrivacyContextModel:PrivFeature ;
+                                                 PrivacyContextModel:maxTimeDiff "2.3" ;
+                                                 rdfs:label "PrivFeature Anonymity Time 1" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_2
+PrivacyContextModel:PrivFeature_Anonymity_Time_2 rdf:type owl:NamedIndividual ,
+                                                          PrivacyContextModel:PrivFeature ;
+                                                 PrivacyContextModel:maxTimeDiff "4.0" ;
+                                                 rdfs:label "PrivFeature Anonymity Time 2" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Anonymity_Time_3
+PrivacyContextModel:PrivFeature_Anonymity_Time_3 rdf:type owl:NamedIndividual ,
+                                                          PrivacyContextModel:PrivFeature ;
+                                                 PrivacyContextModel:maxTimeDiff "7.0" ;
+                                                 rdfs:label "PrivFeature Anonymity Time 3" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_1
+PrivacyContextModel:PrivFeature_Confidentiality_FL_LaneMonitoring_1 rdf:type owl:NamedIndividual ,
+                                                                             PrivacyContextModel:PrivFeature ;
+                                                                    PrivacyContextModel:capacity 7 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_2
+PrivacyContextModel:PrivFeature_Confidentiality_FL_LaneMonitoring_2 rdf:type owl:NamedIndividual ,
+                                                                             PrivacyContextModel:PrivFeature ;
+                                                                    PrivacyContextModel:capacity 8 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_LaneMonitoring_3
+PrivacyContextModel:PrivFeature_Confidentiality_FL_LaneMonitoring_3 rdf:type owl:NamedIndividual ,
+                                                                             PrivacyContextModel:PrivFeature ;
+                                                                    PrivacyContextModel:capacity 11 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_1
+PrivacyContextModel:PrivFeature_Confidentiality_FL_Steering_1 rdf:type owl:NamedIndividual ,
+                                                                       PrivacyContextModel:PrivFeature ;
+                                                              PrivacyContextModel:capacity 7 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_2
+PrivacyContextModel:PrivFeature_Confidentiality_FL_Steering_2 rdf:type owl:NamedIndividual ,
+                                                                       PrivacyContextModel:PrivFeature ;
+                                                              PrivacyContextModel:capacity 8 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#PrivFeature_Confidentiality_FL_Steering_3
+PrivacyContextModel:PrivFeature_Confidentiality_FL_Steering_3 rdf:type owl:NamedIndividual ,
+                                                                       PrivacyContextModel:PrivFeature ;
+                                                              PrivacyContextModel:capacity 12 .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Sabrina
+PrivacyContextModel:Sabrina rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:Driver ;
+                            PrivacyContextModel:consentsTo PrivacyContextModel:BenzCalls ;
+                            PrivacyContextModel:createsPP PrivacyContextModel:PPAnonymityCalls ,
+                                                          PrivacyContextModel:PPConfidentialityCalls ;
+                            PrivacyContextModel:createsSit PrivacyContextModel:Calls ;
+                            PrivacyContextModel:uses PrivacyContextModel:SabrinaCar ;
+                            rdfs:label "Sabrina" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SabrinaCar
+PrivacyContextModel:SabrinaCar rdf:type owl:NamedIndividual ,
+                                        PrivacyContextModel:Vehicle ;
+                               rdfs:label "Sabrina Car" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Speaker
+PrivacyContextModel:Speaker rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:VehicleComponent ;
+                            PrivacyContextModel:partOfVehicle PrivacyContextModel:SabrinaCar ;
+                            rdfs:label "Speaker" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#SteeringWheelAngle
+PrivacyContextModel:SteeringWheelAngle rdf:type owl:NamedIndividual ,
+                                                PrivacyContextModel:VehicleProperty ;
+                                       PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:ChassisSteeringWheel ;
+                                       PrivacyContextModel:produces PrivacyContextModel:VDSteering ;
+                                       rdfs:label "Steering Wheel Angle" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Tim
+PrivacyContextModel:Tim rdf:type owl:NamedIndividual ,
+                                 PrivacyContextModel:Driver ;
+                        PrivacyContextModel:consentsTo PrivacyContextModel:BenzParkassistant ;
+                        PrivacyContextModel:createsPP PrivacyContextModel:PPAnonymityParking ,
+                                                      PrivacyContextModel:PPConfidentialityParking ;
+                        PrivacyContextModel:createsSit PrivacyContextModel:Parking ;
+                        PrivacyContextModel:uses PrivacyContextModel:TimCar ;
+                        rdfs:label "Tim" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TimCar
+PrivacyContextModel:TimCar rdf:type owl:NamedIndividual ,
+                                    PrivacyContextModel:Vehicle ;
+                           rdfs:label "Tim Car" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#TransmissionSpeed
+PrivacyContextModel:TransmissionSpeed rdf:type owl:NamedIndividual ,
+                                               PrivacyContextModel:VehicleProperty ;
+                                      PrivacyContextModel:belongsToVehicleComponent PrivacyContextModel:PowertrainTransmission ;
+                                      PrivacyContextModel:produces PrivacyContextModel:VDSpeed ;
+                                      rdfs:label "Transmission Speed" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDFaceMonitoring
+PrivacyContextModel:VDFaceMonitoring rdf:type owl:NamedIndividual ,
+                                              PrivacyContextModel:VehicleFaceMonitoringData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDHeading
+PrivacyContextModel:VDHeading rdf:type owl:NamedIndividual ,
+                                       PrivacyContextModel:VehicleHeadingData ;
+                              rdfs:label "Vehicle Data: Heading" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDIncomingAudio
+PrivacyContextModel:VDIncomingAudio rdf:type owl:NamedIndividual ,
+                                             PrivacyContextModel:VehicleIncomingAudioData ;
+                                    rdfs:label "Vehicle Data: Incoming Audio" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLaneMonitoring
+PrivacyContextModel:VDLaneMonitoring rdf:type owl:NamedIndividual ,
+                                              PrivacyContextModel:LaneMonitoringData .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDLocation
+PrivacyContextModel:VDLocation rdf:type owl:NamedIndividual ,
+                                        PrivacyContextModel:VehicleLocationData ;
+                               rdfs:label "Vehicle Data: Location" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDOutgoingAudio
+PrivacyContextModel:VDOutgoingAudio rdf:type owl:NamedIndividual ,
+                                             PrivacyContextModel:VehicleOutgoingAudioData ;
+                                    rdfs:label "Vehicle Data: Outgoing Audio" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSpeed
+PrivacyContextModel:VDSpeed rdf:type owl:NamedIndividual ,
+                                     PrivacyContextModel:VehicleSpeedData ;
+                            rdfs:label "Vehicle Data: Speed" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDSteering
+PrivacyContextModel:VDSteering rdf:type owl:NamedIndividual ,
+                                        PrivacyContextModel:VehicleSteeringData ;
+                               rdfs:label "Vehicle Data: Steering" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#VDTime
+PrivacyContextModel:VDTime rdf:type owl:NamedIndividual ,
+                                    PrivacyContextModel:VehicleTimeData ;
+                           rdfs:label "Vehicle Data: Time" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_2
+<http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_2> rdf:type owl:NamedIndividual ,
+                                                                                                                                                            PrivacyContextModel:PrivFeature ;
+                                                                                                                                                   PrivacyContextModel:locDataQuality "0.53" ;
+                                                                                                                                                   rdfs:label "Priv Feature (Anonymity, NearHome)_2" .
+
+
+###  http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_3
+<http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#Priv_Feature_(Anonymity,_Calls)_3> rdf:type owl:NamedIndividual ,
+                                                                                                                                                            PrivacyContextModel:PrivFeature ;
+                                                                                                                                                   PrivacyContextModel:locDataQuality "1.76" ;
+                                                                                                                                                   rdfs:label "Priv Feature (Anonymity, NearHome)_3" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( PrivacyContextModel:DataDependency
+                PrivacyContextModel:Driver
+                PrivacyContextModel:PET
+                PrivacyContextModel:PrivFeature
+                PrivacyContextModel:PrivacyPolicy
+                PrivacyContextModel:PrivacyProperty
+                PrivacyContextModel:Service
+                PrivacyContextModel:ServiceSLA
+                PrivacyContextModel:Situation
+                PrivacyContextModel:Vehicle
+                PrivacyContextModel:VehicleComponent
+                PrivacyContextModel:VehicleData
+                PrivacyContextModel:VehicleProperty
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( PrivacyContextModel:VehicleHeadingData
+                PrivacyContextModel:VehicleLocationData
+                PrivacyContextModel:VehicleSpeedData
+                PrivacyContextModel:VehicleSteeringData
+                PrivacyContextModel:VehicleTimeData
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

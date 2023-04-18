@@ -1,0 +1,2968 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel">
+    <Prefix name="" IRI="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="PrivacyContextModel" IRI="http://www.semanticweb.org/practical-course-information-systems/group-2/ontologies/2022/11/PrivacyContextModel#"/>
+    <Declaration>
+        <Class IRI="#DataDependency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaneMonitoringData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PET"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivacyPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivacyProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceSLA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleFaceMonitoringData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleHeadingData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleIncomingAudioData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleLocationData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleOutgoingAudioData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleSpeedData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleSteeringData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleTimeData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#achieves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#activatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#among"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consentsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createsPP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createsSit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evaluatesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSLA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfVehicle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#protects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#targetsService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesPET"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locDataQuality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxDegreeDiff"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxSpeedDiff"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxTimeDiff"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#threshold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlexCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anonymity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attentiveness_Detection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attentiveness_Detection_SLA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Benz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BenzCalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BenzParkassistant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Calls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CallsDD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChassisSteeringWheel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Freeway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FreewayDD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncomingAudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InfotainmentNavigation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Interior_Camera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LaneDepartureDetectionWarning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lane_Detection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LocationDD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microphone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NMixAnonymityCalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NMixAnonymityNearHome_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NMixAnonymityParking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NMixConfidentialityCalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NMixConfidentialityParking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#N_Mix_Anonymity_Calls_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#N_Mix_Anonymity_NearHome_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaviApp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaviSLA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaviSpeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Navi_CurrentClockTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Navi_Heading"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Navi_Location"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NearHome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OutgoingAudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location_Speed_Time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Speed_Time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_Time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Time_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Time_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Anonymity_Time_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PPAnonymityFreeway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PPAnonymityNearHome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PPConfidentialityCalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PPConfidentialityFreeway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PPConfidentialityParking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParkingDD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowertrainTransmission"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeatureAnonymityCalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeatureAnonymityNearHome_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeatureAnonymityParking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeatureConfidentialityCalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeatureConfidentialityParking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Speed_Time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_Time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sabrina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SabrinaCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Speaker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SteeringWheelAngle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransmissionSpeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDHeading"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDIncomingAudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDLaneMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDLocation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDOutgoingAudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDSteering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VDTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Priv_Feature_(Anonymity,_Calls)_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Priv_Feature_(Anonymity,_Calls)_3"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#LaneMonitoringData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleFaceMonitoringData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleHeadingData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleIncomingAudioData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleLocationData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleOutgoingAudioData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleSpeedData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleSteeringData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleTimeData"/>
+        <Class IRI="#VehicleData"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DataDependency"/>
+        <Class IRI="#Driver"/>
+        <Class IRI="#PET"/>
+        <Class IRI="#PrivFeature"/>
+        <Class IRI="#PrivacyPolicy"/>
+        <Class IRI="#PrivacyProperty"/>
+        <Class IRI="#Service"/>
+        <Class IRI="#ServiceSLA"/>
+        <Class IRI="#Situation"/>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#VehicleComponent"/>
+        <Class IRI="#VehicleData"/>
+        <Class IRI="#VehicleProperty"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#VehicleHeadingData"/>
+        <Class IRI="#VehicleLocationData"/>
+        <Class IRI="#VehicleSpeedData"/>
+        <Class IRI="#VehicleSteeringData"/>
+        <Class IRI="#VehicleTimeData"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#Alex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vehicle"/>
+        <NamedIndividual IRI="#AlexCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyProperty"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Attentiveness_Detection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ServiceSLA"/>
+        <NamedIndividual IRI="#Attentiveness_Detection_SLA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Benz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ServiceSLA"/>
+        <NamedIndividual IRI="#BenzCalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ServiceSLA"/>
+        <NamedIndividual IRI="#BenzParkassistant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Calls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataDependency"/>
+        <NamedIndividual IRI="#CallsDD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleComponent"/>
+        <NamedIndividual IRI="#Camera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleComponent"/>
+        <NamedIndividual IRI="#ChassisSteeringWheel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyProperty"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Freeway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataDependency"/>
+        <NamedIndividual IRI="#FreewayDD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#IncomingAudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleComponent"/>
+        <NamedIndividual IRI="#InfotainmentNavigation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#Interior_Camera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#LaneDepartureDetectionWarning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleComponent"/>
+        <NamedIndividual IRI="#Lane_Detection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataDependency"/>
+        <NamedIndividual IRI="#LocationDD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleComponent"/>
+        <NamedIndividual IRI="#Microphone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#NMixAnonymityCalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#NMixAnonymityNearHome_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#NMixAnonymityParking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#NMixConfidentialityCalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#NMixConfidentialityParking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#N_Mix_Anonymity_Calls_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#N_Mix_Anonymity_NearHome_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#NaviApp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ServiceSLA"/>
+        <NamedIndividual IRI="#NaviSLA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#NaviSpeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#Navi_CurrentClockTime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#Navi_Heading"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#Navi_Location"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#NearHome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#OutgoingAudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location_Speed_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Speed_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PET"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyPolicy"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyPolicy"/>
+        <NamedIndividual IRI="#PPAnonymityFreeway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyPolicy"/>
+        <NamedIndividual IRI="#PPAnonymityNearHome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyPolicy"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyPolicy"/>
+        <NamedIndividual IRI="#PPConfidentialityCalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyPolicy"/>
+        <NamedIndividual IRI="#PPConfidentialityFreeway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivacyPolicy"/>
+        <NamedIndividual IRI="#PPConfidentialityParking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Parking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataDependency"/>
+        <NamedIndividual IRI="#ParkingDD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleComponent"/>
+        <NamedIndividual IRI="#PowertrainTransmission"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeatureAnonymityCalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeatureAnonymityNearHome_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeatureAnonymityParking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeatureConfidentialityCalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeatureConfidentialityParking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Speed_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#Sabrina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vehicle"/>
+        <NamedIndividual IRI="#SabrinaCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleComponent"/>
+        <NamedIndividual IRI="#Speaker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#SteeringWheelAngle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#Tim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vehicle"/>
+        <NamedIndividual IRI="#TimCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleProperty"/>
+        <NamedIndividual IRI="#TransmissionSpeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleFaceMonitoringData"/>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleHeadingData"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleIncomingAudioData"/>
+        <NamedIndividual IRI="#VDIncomingAudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LaneMonitoringData"/>
+        <NamedIndividual IRI="#VDLaneMonitoring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleLocationData"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleOutgoingAudioData"/>
+        <NamedIndividual IRI="#VDOutgoingAudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleSpeedData"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleSteeringData"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleTimeData"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#Priv_Feature_(Anonymity,_Calls)_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivFeature"/>
+        <NamedIndividual IRI="#Priv_Feature_(Anonymity,_Calls)_3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consentsTo"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#Attentiveness_Detection_SLA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consentsTo"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#NaviSLA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsPP"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#PPAnonymityFreeway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsPP"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#PPAnonymityNearHome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsPP"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#PPConfidentialityFreeway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsSit"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#Freeway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsSit"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#NearHome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#AlexCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSLA"/>
+        <NamedIndividual IRI="#Attentiveness_Detection"/>
+        <NamedIndividual IRI="#Attentiveness_Detection_SLA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#Attentiveness_Detection"/>
+        <NamedIndividual IRI="#Camera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#Attentiveness_Detection"/>
+        <NamedIndividual IRI="#ChassisSteeringWheel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#Attentiveness_Detection"/>
+        <NamedIndividual IRI="#Lane_Detection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSLA"/>
+        <NamedIndividual IRI="#Benz"/>
+        <NamedIndividual IRI="#BenzCalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSLA"/>
+        <NamedIndividual IRI="#Benz"/>
+        <NamedIndividual IRI="#BenzParkassistant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#Benz"/>
+        <NamedIndividual IRI="#ChassisSteeringWheel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#Benz"/>
+        <NamedIndividual IRI="#Microphone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#Benz"/>
+        <NamedIndividual IRI="#PowertrainTransmission"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#Benz"/>
+        <NamedIndividual IRI="#Speaker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <NamedIndividual IRI="#Calls"/>
+        <NamedIndividual IRI="#VDIncomingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <NamedIndividual IRI="#Calls"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <NamedIndividual IRI="#Calls"/>
+        <NamedIndividual IRI="#VDOutgoingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#CallsDD"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#CallsDD"/>
+        <NamedIndividual IRI="#VDIncomingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#CallsDD"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#CallsDD"/>
+        <NamedIndividual IRI="#VDOutgoingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#CallsDD"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#Camera"/>
+        <NamedIndividual IRI="#AlexCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#ChassisSteeringWheel"/>
+        <NamedIndividual IRI="#AlexCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#ChassisSteeringWheel"/>
+        <NamedIndividual IRI="#TimCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <NamedIndividual IRI="#Freeway"/>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#FreewayDD"/>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#FreewayDD"/>
+        <NamedIndividual IRI="#VDLaneMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#FreewayDD"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#IncomingAudio"/>
+        <NamedIndividual IRI="#Microphone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#IncomingAudio"/>
+        <NamedIndividual IRI="#VDIncomingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#InfotainmentNavigation"/>
+        <NamedIndividual IRI="#AlexCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#Interior_Camera"/>
+        <NamedIndividual IRI="#Camera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#Interior_Camera"/>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#LaneDepartureDetectionWarning"/>
+        <NamedIndividual IRI="#Lane_Detection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#LaneDepartureDetectionWarning"/>
+        <NamedIndividual IRI="#VDLaneMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#Lane_Detection"/>
+        <NamedIndividual IRI="#AlexCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#LocationDD"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#LocationDD"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#LocationDD"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#LocationDD"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#Microphone"/>
+        <NamedIndividual IRI="#SabrinaCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#NMixAnonymityCalls"/>
+        <NamedIndividual IRI="#PrivFeatureAnonymityCalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#NMixAnonymityCalls"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#NMixAnonymityCalls"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#NMixAnonymityNearHome_1"/>
+        <NamedIndividual IRI="#PrivFeatureAnonymityNearHome_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#NMixAnonymityNearHome_1"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#NMixAnonymityNearHome_1"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#NMixAnonymityParking"/>
+        <NamedIndividual IRI="#PrivFeatureAnonymityParking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#NMixAnonymityParking"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#NMixAnonymityParking"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#NMixConfidentialityCalls"/>
+        <NamedIndividual IRI="#PrivFeatureConfidentialityCalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#NMixConfidentialityCalls"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#NMixConfidentialityCalls"/>
+        <NamedIndividual IRI="#VDIncomingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#NMixConfidentialityCalls"/>
+        <NamedIndividual IRI="#VDOutgoingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#NMixConfidentialityCalls"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#NMixConfidentialityParking"/>
+        <NamedIndividual IRI="#PrivFeatureConfidentialityParking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#NMixConfidentialityParking"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#NMixConfidentialityParking"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#NMixConfidentialityParking"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#N_Mix_Anonymity_Calls_3"/>
+        <NamedIndividual IRI="#Priv_Feature_(Anonymity,_Calls)_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#N_Mix_Anonymity_Calls_3"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#N_Mix_Anonymity_Calls_3"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#N_Mix_Anonymity_NearHome_2"/>
+        <NamedIndividual IRI="#Priv_Feature_(Anonymity,_Calls)_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#N_Mix_Anonymity_NearHome_2"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#N_Mix_Anonymity_NearHome_2"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSLA"/>
+        <NamedIndividual IRI="#NaviApp"/>
+        <NamedIndividual IRI="#NaviSLA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#NaviApp"/>
+        <NamedIndividual IRI="#InfotainmentNavigation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <NamedIndividual IRI="#NaviApp"/>
+        <NamedIndividual IRI="#PowertrainTransmission"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#NaviSpeed"/>
+        <NamedIndividual IRI="#InfotainmentNavigation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#NaviSpeed"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#Navi_CurrentClockTime"/>
+        <NamedIndividual IRI="#InfotainmentNavigation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#Navi_CurrentClockTime"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#Navi_Heading"/>
+        <NamedIndividual IRI="#InfotainmentNavigation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#Navi_Heading"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#Navi_Location"/>
+        <NamedIndividual IRI="#InfotainmentNavigation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#Navi_Location"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <NamedIndividual IRI="#NearHome"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#OutgoingAudio"/>
+        <NamedIndividual IRI="#Speaker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#OutgoingAudio"/>
+        <NamedIndividual IRI="#VDOutgoingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1"/>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_1"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2"/>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_2"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3"/>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_DifferentialPrivacy_FaceMonitoring_3"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_1"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_1"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_1"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_2"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_2"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_2"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_3"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_3"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_3"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location_Speed_Time"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Location_Speed_Time"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Speed_Time"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Speed_Time"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Heading_Speed_Time"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_1"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_1"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_1"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_2"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_2"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_2"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_3"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_3"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_3"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_Time"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_Time"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Speed_Time"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_1"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_1"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_1"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_2"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_2"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_2"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_3"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_3"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Anonymity_Time_3"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_1"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_1"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_1"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_2"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_2"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_2"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_3"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_3"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Confidentiality_FederatedLearning_Steering_3"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_1"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_1"/>
+        <NamedIndividual IRI="#VDLaneMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_1"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_2"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_2"/>
+        <NamedIndividual IRI="#VDLaneMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_2"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_3"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInput"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_3"/>
+        <NamedIndividual IRI="#VDLaneMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#PET_Confidentialiy_FederatedLearning_LaneMonitoring_3"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#achieves"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activatesIn"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+        <NamedIndividual IRI="#Calls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+        <NamedIndividual IRI="#VDIncomingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+        <NamedIndividual IRI="#VDOutgoingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetsService"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+        <NamedIndividual IRI="#Benz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#achieves"/>
+        <NamedIndividual IRI="#PPAnonymityFreeway"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activatesIn"/>
+        <NamedIndividual IRI="#PPAnonymityFreeway"/>
+        <NamedIndividual IRI="#Freeway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityFreeway"/>
+        <NamedIndividual IRI="#VDFaceMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetsService"/>
+        <NamedIndividual IRI="#PPAnonymityFreeway"/>
+        <NamedIndividual IRI="#Attentiveness_Detection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#achieves"/>
+        <NamedIndividual IRI="#PPAnonymityNearHome"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activatesIn"/>
+        <NamedIndividual IRI="#PPAnonymityNearHome"/>
+        <NamedIndividual IRI="#NearHome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityNearHome"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetsService"/>
+        <NamedIndividual IRI="#PPAnonymityNearHome"/>
+        <NamedIndividual IRI="#NaviApp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#achieves"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+        <NamedIndividual IRI="#Anonymity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activatesIn"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+        <NamedIndividual IRI="#Parking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetsService"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+        <NamedIndividual IRI="#Benz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#achieves"/>
+        <NamedIndividual IRI="#PPConfidentialityCalls"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activatesIn"/>
+        <NamedIndividual IRI="#PPConfidentialityCalls"/>
+        <NamedIndividual IRI="#Calls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPConfidentialityCalls"/>
+        <NamedIndividual IRI="#VDIncomingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPConfidentialityCalls"/>
+        <NamedIndividual IRI="#VDOutgoingAudio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetsService"/>
+        <NamedIndividual IRI="#PPConfidentialityCalls"/>
+        <NamedIndividual IRI="#Benz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#achieves"/>
+        <NamedIndividual IRI="#PPConfidentialityFreeway"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activatesIn"/>
+        <NamedIndividual IRI="#PPConfidentialityFreeway"/>
+        <NamedIndividual IRI="#Freeway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPConfidentialityFreeway"/>
+        <NamedIndividual IRI="#VDLaneMonitoring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPConfidentialityFreeway"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetsService"/>
+        <NamedIndividual IRI="#PPConfidentialityFreeway"/>
+        <NamedIndividual IRI="#Attentiveness_Detection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#achieves"/>
+        <NamedIndividual IRI="#PPConfidentialityParking"/>
+        <NamedIndividual IRI="#Confidentiality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activatesIn"/>
+        <NamedIndividual IRI="#PPConfidentialityParking"/>
+        <NamedIndividual IRI="#Parking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPConfidentialityParking"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#protects"/>
+        <NamedIndividual IRI="#PPConfidentialityParking"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetsService"/>
+        <NamedIndividual IRI="#PPConfidentialityParking"/>
+        <NamedIndividual IRI="#Benz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <NamedIndividual IRI="#Parking"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <NamedIndividual IRI="#Parking"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#ParkingDD"/>
+        <NamedIndividual IRI="#VDHeading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#ParkingDD"/>
+        <NamedIndividual IRI="#VDLocation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#ParkingDD"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#ParkingDD"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#among"/>
+        <NamedIndividual IRI="#ParkingDD"/>
+        <NamedIndividual IRI="#VDTime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#PowertrainTransmission"/>
+        <NamedIndividual IRI="#AlexCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#PowertrainTransmission"/>
+        <NamedIndividual IRI="#TimCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consentsTo"/>
+        <NamedIndividual IRI="#Sabrina"/>
+        <NamedIndividual IRI="#BenzCalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsPP"/>
+        <NamedIndividual IRI="#Sabrina"/>
+        <NamedIndividual IRI="#PPAnonymityCalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsPP"/>
+        <NamedIndividual IRI="#Sabrina"/>
+        <NamedIndividual IRI="#PPConfidentialityCalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsSit"/>
+        <NamedIndividual IRI="#Sabrina"/>
+        <NamedIndividual IRI="#Calls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Sabrina"/>
+        <NamedIndividual IRI="#SabrinaCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <NamedIndividual IRI="#Speaker"/>
+        <NamedIndividual IRI="#SabrinaCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#SteeringWheelAngle"/>
+        <NamedIndividual IRI="#ChassisSteeringWheel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#SteeringWheelAngle"/>
+        <NamedIndividual IRI="#VDSteering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consentsTo"/>
+        <NamedIndividual IRI="#Tim"/>
+        <NamedIndividual IRI="#BenzParkassistant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsPP"/>
+        <NamedIndividual IRI="#Tim"/>
+        <NamedIndividual IRI="#PPAnonymityParking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsPP"/>
+        <NamedIndividual IRI="#Tim"/>
+        <NamedIndividual IRI="#PPConfidentialityParking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createsSit"/>
+        <NamedIndividual IRI="#Tim"/>
+        <NamedIndividual IRI="#Parking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Tim"/>
+        <NamedIndividual IRI="#TimCar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <NamedIndividual IRI="#TransmissionSpeed"/>
+        <NamedIndividual IRI="#PowertrainTransmission"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produces"/>
+        <NamedIndividual IRI="#TransmissionSpeed"/>
+        <NamedIndividual IRI="#VDSpeed"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#Attentiveness_Detection_SLA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#threshold"/>
+        <NamedIndividual IRI="#Attentiveness_Detection_SLA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locDataQuality"/>
+        <NamedIndividual IRI="#NaviSLA"/>
+        <Literal>1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxDegreeDiff"/>
+        <NamedIndividual IRI="#NaviSLA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxSpeedDiff"/>
+        <NamedIndividual IRI="#NaviSLA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxTimeDiff"/>
+        <NamedIndividual IRI="#NaviSLA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locDataQuality"/>
+        <NamedIndividual IRI="#PrivFeatureAnonymityNearHome_1"/>
+        <Literal>1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#threshold"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#threshold"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#threshold"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_CaDaA_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxDegreeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_1"/>
+        <Literal>1.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxDegreeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_2"/>
+        <Literal>8.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxDegreeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_3"/>
+        <Literal>14.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latency"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locDataQuality"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxDegreeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latency"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locDataQuality"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxDegreeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxSpeedDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxTimeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Location_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxDegreeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxSpeedDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxTimeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxTimeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Heading_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxSpeedDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_1"/>
+        <Literal>2.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxSpeedDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_2"/>
+        <Literal>6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxSpeedDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_3"/>
+        <Literal>7.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latency"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxSpeedDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxTimeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Speed_Time"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxTimeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_1"/>
+        <Literal>2.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxTimeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_2"/>
+        <Literal>4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxTimeDiff"/>
+        <NamedIndividual IRI="#PrivFeature_Anonymity_Time_3"/>
+        <Literal>7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_LaneMonitoring_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#PrivFeature_Confidentiality_FL_Steering_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locDataQuality"/>
+        <NamedIndividual IRI="#Priv_Feature_(Anonymity,_Calls)_2"/>
+        <Literal>0.53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locDataQuality"/>
+        <NamedIndividual IRI="#Priv_Feature_(Anonymity,_Calls)_3"/>
+        <Literal>1.76</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#achieves"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#activatesIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#among"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consentsTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#createsPP"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#createsSit"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInput"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSLA"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#partOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#produces"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#protects"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#provides"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#targetsService"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#uses"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesPET"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#achieves"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#activatesIn"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#among"/>
+        <Class IRI="#DataDependency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesTo"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <Class IRI="#VehicleProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consentsTo"/>
+        <Class IRI="#Driver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createsPP"/>
+        <Class IRI="#Driver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createsSit"/>
+        <Class IRI="#Driver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <Class IRI="#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFeature"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInput"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSLA"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOf"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#VehicleProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#protects"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#provides"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#targetsService"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Driver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesPET"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#achieves"/>
+        <Class IRI="#PrivacyProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#activatesIn"/>
+        <Class IRI="#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#among"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesTo"/>
+        <Class IRI="#VehicleProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToVehicleComponent"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consentsTo"/>
+        <Class IRI="#ServiceSLA"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createsPP"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createsSit"/>
+        <Class IRI="#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evaluatesOn"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFeature"/>
+        <Class IRI="#PrivFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInput"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSLA"/>
+        <Class IRI="#ServiceSLA"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOf"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfVehicle"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#protects"/>
+        <Class IRI="#VehicleData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#provides"/>
+        <Class IRI="#PrivacyProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <Class IRI="#VehicleComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requestsDataFrom"/>
+        <Class IRI="#VehicleProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#targetsService"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesPET"/>
+        <Class IRI="#PET"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Alex</IRI>
+        <Literal>Alex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AlexCar</IRI>
+        <Literal>Alex Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Anonymity</IRI>
+        <Literal>Anonymity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Attentiveness_Detection</IRI>
+        <Literal>Attentiveness Detection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Benz</IRI>
+        <Literal>Benz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BenzCalls</IRI>
+        <Literal>Benz Calls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BenzParkassistant</IRI>
+        <Literal>Benz Parkassistent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Calls</IRI>
+        <Literal>Calls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CallsDD</IRI>
+        <Literal>Calls Data Dependency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChassisSteeringWheel</IRI>
+        <Literal>Chassis Steering Wheel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Confidentiality</IRI>
+        <Literal>Confidentiality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IncomingAudio</IRI>
+        <Literal>Incoming Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InfotainmentNavigation</IRI>
+        <Literal>Infotainment Navigation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LocationDD</IRI>
+        <Literal>Location Data Dependency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Microphone</IRI>
+        <Literal>Microphone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NMixAnonymityCalls</IRI>
+        <Literal>N Mix Anonymity Calls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NMixAnonymityNearHome_1</IRI>
+        <Literal>N Mix Anonymity Near Home_1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NMixAnonymityParking</IRI>
+        <Literal>N Mix Anonymity Parking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NMixConfidentialityCalls</IRI>
+        <Literal>N Mix Confidentiality Calls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NMixConfidentialityParking</IRI>
+        <Literal>N Mix Confidentiality Parking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#N_Mix_Anonymity_Calls_3</IRI>
+        <Literal>N Mix Anonymity NearHome_3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#N_Mix_Anonymity_NearHome_2</IRI>
+        <Literal>N Mix Anonymity NearHome_2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaviApp</IRI>
+        <Literal>Navi App</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaviSLA</IRI>
+        <Literal>Navi SLA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaviSpeed</IRI>
+        <Literal>Navi Speed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Navi_CurrentClockTime</IRI>
+        <Literal>Navi CurrentClockTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Navi_Heading</IRI>
+        <Literal>Navi Heading</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Navi_Location</IRI>
+        <Literal>Navi Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NearHome</IRI>
+        <Literal>Near Home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OutgoingAudio</IRI>
+        <Literal>Outgoing Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Heading_1</IRI>
+        <Literal>PET Anonymity Heading 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Heading_2</IRI>
+        <Literal>PET Anonymity Heading 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Heading_3</IRI>
+        <Literal>PET Anonymity Heading 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Heading_Location</IRI>
+        <Literal>PET Anonymity Heading Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Heading_Location_Speed_Time</IRI>
+        <Literal>PET Anonymity Heading Location Speed Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Heading_Speed_Time</IRI>
+        <Literal>PET Anonymity Heading Speed Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Speed_1</IRI>
+        <Literal>PET Anonymity Speed 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Speed_2</IRI>
+        <Literal>PET Anonymity Speed 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Speed_3</IRI>
+        <Literal>PET Anonymity Speed 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Speed_Time</IRI>
+        <Literal>PET Anonymity Speed Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Time_1</IRI>
+        <Literal>PET Anonymity Time 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Time_2</IRI>
+        <Literal>PET Anonymity Time 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PET_Anonymity_Time_3</IRI>
+        <Literal>PET Anonymity Time 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PPAnonymityCalls</IRI>
+        <Literal>Privacy Policy (Anonymity, Calls)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PPAnonymityNearHome</IRI>
+        <Literal>Privacy Policy (Anonymity, Near Home)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PPAnonymityParking</IRI>
+        <Literal>Privacy Policy (Anonymity, Parking)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PPConfidentialityCalls</IRI>
+        <Literal>Privacy Policy (Confidentiality, Calls)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PPConfidentialityParking</IRI>
+        <Literal>Privacy Policy (Confidentiality, Parking)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Parking</IRI>
+        <Literal>Parking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParkingDD</IRI>
+        <Literal>Parking Data Dependency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PowertrainTransmission</IRI>
+        <Literal>Powertrain Transmission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeatureAnonymityCalls</IRI>
+        <Literal>Priv Feature (Anonymity, Calls)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeatureAnonymityNearHome_1</IRI>
+        <Literal>Priv Feature (Anonymity, Near Home)_1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeatureAnonymityParking</IRI>
+        <Literal>Priv Feature (Anonymity, Parking)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeatureConfidentialityCalls</IRI>
+        <Literal>Priv Feature (Confidentiality, Calls)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeatureConfidentialityParking</IRI>
+        <Literal>Priv Feature (Confidentiality, Parking)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Heading_1</IRI>
+        <Literal>PrivFeature Anonymity Heading 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Heading_2</IRI>
+        <Literal>PrivFeature Anonymity Heading 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Heading_3</IRI>
+        <Literal>PrivFeature Anonymity Heading 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Heading_Location</IRI>
+        <Literal>PrivFeature Anonymity Heading Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Heading_Location_Speed_Time</IRI>
+        <Literal>PrivFeature Anonymity Heading Location Speed Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Heading_Speed_Time</IRI>
+        <Literal>PrivFeature Anonymity Heading Speed Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Speed_1</IRI>
+        <Literal>PrivFeature Anonymity Speed 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Speed_2</IRI>
+        <Literal>PrivFeature Anonymity Speed 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Speed_3</IRI>
+        <Literal>PrivFeature Anonymity Speed 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Speed_Time</IRI>
+        <Literal>PrivFeature Anonymity Speed Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Time_1</IRI>
+        <Literal>PrivFeature Anonymity Time 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Time_2</IRI>
+        <Literal>PrivFeature Anonymity Time 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivFeature_Anonymity_Time_3</IRI>
+        <Literal>PrivFeature Anonymity Time 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sabrina</IRI>
+        <Literal>Sabrina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SabrinaCar</IRI>
+        <Literal>Sabrina Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Speaker</IRI>
+        <Literal>Speaker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SteeringWheelAngle</IRI>
+        <Literal>Steering Wheel Angle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tim</IRI>
+        <Literal>Tim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TimCar</IRI>
+        <Literal>Tim Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransmissionSpeed</IRI>
+        <Literal>Transmission Speed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VDHeading</IRI>
+        <Literal>Vehicle Data: Heading</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VDIncomingAudio</IRI>
+        <Literal>Vehicle Data: Incoming Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VDLocation</IRI>
+        <Literal>Vehicle Data: Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VDOutgoingAudio</IRI>
+        <Literal>Vehicle Data: Outgoing Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VDSpeed</IRI>
+        <Literal>Vehicle Data: Speed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VDSteering</IRI>
+        <Literal>Vehicle Data: Steering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VDTime</IRI>
+        <Literal>Vehicle Data: Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Priv_Feature_(Anonymity,_Calls)_2</IRI>
+        <Literal>Priv Feature (Anonymity, NearHome)_2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Priv_Feature_(Anonymity,_Calls)_3</IRI>
+        <Literal>Priv Feature (Anonymity, NearHome)_3</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
